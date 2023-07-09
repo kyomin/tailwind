@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tailwindcss</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- 
+    red가 blue보다 큰 우선순위를 가진다. 
+    원래대로라면 뒤에 오는 클래스 스타일을 따르는데 무시된다.
+    색깔 관련 클래스를 같이 쓸 일은 없지만 리액트 등에서 사용할 시 주의해야 한다.
+  -->
+  <div class="w-10 h-10 bg-blue-500 bg-red-500"></div>
+  <br />
+  <div class="w-10 h-10 bg-red-500 bg-blue-500"></div>
+  <br />
+  <div class="w-10 h-10 bg-blue-400 bg-red-500"></div>
+  <br />
+  <div class="w-10 h-10 bg-red-500 bg-blue-400"></div>
+
+  <div class="grid grid-cols-10 gap-2">
+    <div class="bg-sky-50 aspect-square"></div>
+    <div class="bg-sky-100 aspect-square"></div>
+    <div class="bg-sky-200 aspect-square"></div>
+    <div class="bg-sky-300 aspect-square"></div>
+    <div class="bg-sky-400 aspect-square"></div>
+    <div class="bg-sky-500 aspect-square"></div>
+    <div class="bg-sky-600 aspect-square"></div>
+    <div class="bg-sky-700 aspect-square"></div>
+    <div class="bg-sky-800 aspect-square"></div>
+    <div class="bg-sky-900 aspect-square"></div>
+  </div>
+  <div class="grid grid-cols-10 gap-2">
+    <div class="bg-blue-50 aspect-square"></div>
+    <div class="bg-blue-100 aspect-square"></div>
+    <div class="bg-blue-200 aspect-square"></div>
+    <div class="bg-blue-300 aspect-square"></div>
+    <div class="bg-blue-400 aspect-square"></div>
+    <div class="bg-blue-500 aspect-square"></div>
+    <div class="bg-blue-600 aspect-square"></div>
+    <div class="bg-blue-700 aspect-square"></div>
+    <div class="bg-blue-800 aspect-square"></div>
+    <div class="bg-blue-900 aspect-square"></div>
+  </div>
+  <div class="grid grid-cols-10 gap-2">
+    <div class="bg-indigo-50 aspect-square"></div>
+    <div class="bg-indigo-100 aspect-square"></div>
+    <div class="bg-indigo-200 aspect-square"></div>
+    <div class="bg-indigo-300 aspect-square"></div>
+    <div class="bg-indigo-400 aspect-square"></div>
+    <div class="bg-indigo-500 aspect-square"></div>
+    <div class="bg-indigo-600 aspect-square"></div>
+    <div class="bg-indigo-700 aspect-square"></div>
+    <div class="bg-indigo-800 aspect-square"></div>
+    <div class="bg-indigo-900 aspect-square"></div>
+  </div>
+  <div class="grid grid-cols-10 gap-2">
+    <div class="bg-violet-50 aspect-square"></div>
+    <div class="bg-violet-100 aspect-square"></div>
+    <div class="bg-violet-200 aspect-square"></div>
+    <div class="bg-violet-300 aspect-square"></div>
+    <div class="bg-violet-400 aspect-square"></div>
+    <div class="bg-violet-500 aspect-square"></div>
+    <div class="bg-violet-600 aspect-square"></div>
+    <div class="bg-violet-700 aspect-square"></div>
+    <div class="bg-violet-800 aspect-square"></div>
+    <div class="bg-violet-900 aspect-square"></div>
+  </div>
+</body>
+
+</html>
