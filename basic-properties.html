@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tailwindcss</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- https://tailwindcss.com/docs/margin -->
+  <!-- https://tailwindcss.com/docs/padding -->
+  <!-- https://tailwindcss.com/docs/font-weight -->
+  <!-- https://tailwindcss.com/docs/text-color -->
+  <div class="text-base text-red-500">hello world</div>
+  <div class="text-lg">hello world</div>
+  <div class="text-2xl">hello world</div>
+  <div class="text-2xl p-3">hello world</div>
+  <div class="text-2xl pt-3">hello world</div>
+  <div class="text-2xl pr-3">hello world</div>
+  <div class="text-2xl pb-3">hello world</div>
+  <div class="text-2xl pl-3">hello world</div>
+
+  <br />
+  <br />
+
+  <div class="text-2xl">hello world</div>
+  <!-- 마진 병합 발생(인접 요소의 상하 마진에서만 발생하는 현상) -->
+  <div class="text-2xl m-3">hello world</div>
+  <div class="text-2xl mt-3">hello world</div>
+  <div class="text-2xl mr-3">hello world</div>
+  <div class="text-2xl mb-3">hello world</div>
+  <div class="text-2xl ml-3">hello world</div>
+  <!-- my-3에서 y는 위, 아래 -->
+  <!-- mx-3에서 x는 왼쪽, 오른쪽 -->
+  <div class="text-2xl my-3">hello world</div>
+  <div class="text-2xl mx-3">hello world</div>
+
+  <!-- https://tailwindcss.com/docs/list-style-type -->
+  <div class="p-5">
+    <ul class="list-disc">
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+    </ul>
+  </div>
+  <div class="p-5">
+    <ul class="list-decimal">
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, eius error non iusto, id libero quam facere
+        minima rem aliquid dolores fuga. Vel sequi numquam id, placeat maiores facilis similique!</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+      <li>hello world</li>
+    </ul>
+  </div>
+  <div class="w-32 h-32 bg-red-400"></div>
+  <br />
+  <div class="w-32 h-32 bg-red-400 rounded"></div>
+  <br />
+  <div class="w-32 h-32 bg-red-400 rounded-2xl"></div>
+  <br />
+  <div class="w-32 h-32 bg-red-400 rounded-full"></div>
+
+  <!-- https://tailwindcss.com/docs/adding-custom-styles#using-arbitrary-values -->
+  <!-- tailwind 속성만을 사용하는 것이 아닌, 사용자 지정 스타일 속성을 넣을 수 있다. -->
+  <div class="text-[17px]">hello world</div>
+  <div class="mt-[17px]">hello world</div>
+  <div class="bg-[#4267b2] text-white">hello world</div>
+</body>
+
+</html>
